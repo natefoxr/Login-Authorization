@@ -1,0 +1,151 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    background: linear-gradient(270deg, #9d858d, #bba0b2, #a4a8d1, #a4bfeb, #8cabbe);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: backgroundAnimation 29s ease infinite;
+    -moz-animation: backgroundAnimation 29s ease infinite;
+    animation: backgroundAnimation 29s ease infinite;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: auto;
+    padding: 50px;
+}
+
+.logo {
+    width: 25rem;
+    height: auto;
+    padding: 0;
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+input {
+    border: 1px solid #00000000;
+    border-radius: 5px;
+    background: #e4e4e4;
+    color: #3d3d3d;
+    font-size: 1.25rem;
+}
+
+input:hover, input:focus, input:active {
+    border: 1px solid #24a0ed;
+}
+
+.signup {
+    text-align: center;
+    font-weight: 200;
+}
+
+.signup a {
+    color: #24a0ed;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1e80bd;
+    text-decoration: underline;
+}
+
+#login-btn {
+    margin-top: 10px;
+    padding: 7px;
+    width: 100%;
+    font-size: 1rem;
+    color: #818181;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#login-btn:hover, #login-btn:focus, #login-btn:active {
+    color: #696969;
+}
+
+.email-label, .password-label {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+#email, #passwordBox {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#strength {
+    margin-top: 5px;
+    width: 0%;
+    height: 10px;
+    border: 1px solid #00000000;
+    border-radius: 5px;
+}
+
+.password-link {
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #24a0ed;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.remember-me label {
+    font-weight: 600;
+}
+
+.remember-me label:hover {
+    cursor: pointer;
+    font-weight: 600;
+    color: #024f80;
+}
+
+.remember-me input:hover {
+    cursor: pointer;
+    border: 1px solid #24a0ed;
+}
+
+@-webkit-keyframes backgroundAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes backgroundAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes backgroundAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        background-color: #fff;
+        border-radius: 15px;
+        margin: auto;
+        padding: 15px;
+    }
+    
+    .logo {
+        width: 15rem;
+    }
+  }
+

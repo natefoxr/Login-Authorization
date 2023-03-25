@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="./LoremIpsumLogo.jpg" alt="Company Logo">
+        <h5 class="signup">Have an account? <a href="/login">Log In</a></h5>
+        <form action="/sign-up" method="post">
+            <div class="email-label">
+                <label for="email">Email address</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="password-label">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="passwordBox">
+                <div id="strength"></div>
+                <a class="password-link" onclick="togglePassword()">Show password</a>
+            </div>
+            <input type="submit" name="login" value="Log in" id="login-btn">
+        </form>
+    </div>
+
+    <script src="./login.js"></script>
+</body>
+</html>
